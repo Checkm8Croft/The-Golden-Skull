@@ -1,0 +1,69 @@
+//--------------------------------------
+// Tomb Raider II Script File
+//--------------------------------------
+
+DESCRIPTION: Tomb Raider II Script File
+GameStrings: ENGLISH.TXT
+
+//--------------------------------------
+// Options
+//--------------------------------------
+
+OPTIONS:
+
+	CYPHER_CODE: 166
+	SECRET_TRACK: 47
+	SELECT_ANY_LEVEL:
+
+END:
+
+//--------------------------------------
+// Title
+//--------------------------------------
+
+TITLE:
+
+	GAME: data\title.tr2
+
+	PCFILE: data\title.pcx
+	PCFILE: data\legal.pcx
+
+	TRACK: 64
+
+END:
+
+//--------------------------------------
+// FrontEnd
+//--------------------------------------
+
+FRONTEND:
+
+	// Add something here...
+
+END:
+
+//--------------------------------------
+// Gym
+//--------------------------------------
+
+GYM: Lara's Home
+
+	SECRETS: 0
+	LOAD_PIC: pix\mansion.raw
+	TRACK: 0
+	GAME: data\assault.tr2
+
+END:
+
+//--------------------------------------
+// Levels
+//--------------------------------------
+
+LEVEL: The Venice Return
+
+	LOAD_PIC: pix\mansion.pcx
+	TRACK: 33
+	GAME: data\the_venice_return.tr2
+	COMPLETE:
+
+END:

@@ -1,0 +1,236 @@
+//--------------------------------------
+// GAME STRINGS (89 entries)
+//--------------------------------------
+
+GAME_STRINGS:
+
+INVENTORY
+OPTION
+ITEMS
+GAME OVER
+Load Game
+Save Game
+New Game
+Restart Level
+Exit to Title
+Exit Demo
+Exit Game
+Select Level
+Save Position
+Select Detail
+High
+Medium
+Low
+Walk
+Roll
+Run
+Left
+Right
+Back
+Step Left
+?
+Step Right
+?
+Look
+Jump
+Action
+Draw Weapon
+?
+Inventory
+Flare
+Step
+Statistics
+Pistols
+Shotgun
+Automatic Pistols
+Uzis
+Harpoon Gun
+M16
+Grenade Launcher
+Flare
+Pistol Clips
+Shotgun Shells
+Automatic Pistol Clips
+Uzi Clips
+Harpoons
+M16 Clips
+Grenades
+Small Medi Pack
+Large Medi Pack
+Pickup
+Puzzle
+Key
+Game
+Lara's Home
+LOADING
+Time Taken
+Secrets Found
+Location
+Kills
+Ammo Used
+Hits
+Saves Performed
+Distance Travelled
+Health Packs Used
+Release Version 1.1
+None
+Finish
+BEST TIMES
+No Times Set
+N/A
+Current Position
+Final Statistics
+of
+Story so far...
+EMPTY STRING SLOT 01
+EMPTY STRING SLOT 02
+EMPTY STRING SLOT 03
+EMPTY STRING SLOT 04
+EMPTY STRING SLOT 05
+EMPTY STRING SLOT 06
+EMPTY STRING SLOT 07
+EMPTY STRING SLOT 08
+EMPTY STRING SLOT 09
+EMPTY STRING SLOT 10
+EMPTY STRING SLOT 11
+
+END:
+
+//--------------------------------------
+// PC STRINGS (41 entries)
+//--------------------------------------
+
+PC_STRINGS:
+
+Detail Levels
+Demo Mode
+Sound
+Controls
+Gamma
+Set Volumes
+User Keys
+The file could not be saved!
+Try Again?
+YES
+NO
+Save Complete!
+No save games!
+None valid
+Save Game?
+- EMPTY SLOT -
+OFF
+ON
+Setup Sound Card
+Default Keys
+DOZY
+EMPTY STRING SLOT 12
+EMPTY STRING SLOT 13
+EMPTY STRING SLOT 14
+EMPTY STRING SLOT 15
+EMPTY STRING SLOT 16
+EMPTY STRING SLOT 17
+EMPTY STRING SLOT 18
+EMPTY STRING SLOT 19
+EMPTY STRING SLOT 20
+EMPTY STRING SLOT 21
+EMPTY STRING SLOT 22
+EMPTY STRING SLOT 23
+EMPTY STRING SLOT 24
+EMPTY STRING SLOT 25
+EMPTY STRING SLOT 26
+EMPTY STRING SLOT 27
+EMPTY STRING SLOT 28
+EMPTY STRING SLOT 29
+EMPTY STRING SLOT 30
+EMPTY STRING SLOT 31
+
+END:
+
+//--------------------------------------
+// PLAYSTATION STRINGS (80 entries)
+//--------------------------------------
+
+PSX_STRINGS:
+
+Screen Adjust
+DEMO MODE
+Sound
+Controls
+Gamma
+Set Volumes
+Control Method
+The file could not be saved!
+Try Again?
+YES
+NO
+Save Complete!
+No save games!
+None valid
+Save Game?
+- EMPTY SLOT -
+Press any button to quit
+Use directional buttons
+to adjust screen position
+> Select
+; Go Back
+> Continue
+Paused
+Controller Removed
+Save game to
+Overwrite game on
+Load game from
+the Memory card in
+Memory card slot 1
+Are you sure ?
+Yes
+No
+is full
+There are no
+Tomb Raider II games on
+There is a problem with
+There is no Memory card in
+is unformatted
+Would you like to
+format it ?
+Saving game to
+Loading game from
+Formatting
+Overwrite game
+Save game
+Load game
+Format Memory card
+Exit
+Continue
+You will not be able
+to save any games unless
+you insert a formatted
+Memory card with at least
+one free block
+The Memory card in
+Exit without saving
+Exit without loading
+Start game
+UNFORMATTED MEMORY CARD
+Insert a formatted
+or press > to continue
+without saving.
+bu00:BESLES-00718TOMB2
+bu00:BASLUS-00437TOMB2
+Load O.K.
+Load failed
+Saved O.K.
+Save failed
+EMPTY STRING SLOT 32
+EMPTY STRING SLOT 33
+EMPTY STRING SLOT 34
+EMPTY STRING SLOT 35
+EMPTY STRING SLOT 36
+EMPTY STRING SLOT 37
+EMPTY STRING SLOT 38
+EMPTY STRING SLOT 39
+EMPTY STRING SLOT 40
+EMPTY STRING SLOT 41
+EMPTY STRING SLOT 42
+EMPTY STRING SLOT 43
+
+END:

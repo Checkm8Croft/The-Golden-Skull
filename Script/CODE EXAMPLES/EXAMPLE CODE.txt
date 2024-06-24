@@ -1,0 +1,273 @@
+//========================================================================
+//========================================================================
+//========================================================================
+//
+//	TOMB RAIDER II/III SCRIPT TEMPLATE - ENGLISH
+//
+//	This script was not produced and is not supported or endorsed
+//	by Eidos or Core Design.
+//
+//	Based in the research format by IceBerg.
+//
+//	Created by SuiKaze Raider.
+//	Version: 1.0.0.0
+//
+//========================================================================
+//========================================================================
+//========================================================================
+
+
+
+DESCRIPTION:	Script_Description
+
+
+
+//------------------------------------------------------------------------
+//
+//      O P T I O N S
+//
+//------------------------------------------------------------------------
+
+
+
+OPTIONS:
+
+   //---------------------------------------------------------------------
+   // Possible Values:
+   // LEVEL %d, SEQUENCE %d, SAVEDGAME %d, CINE %d, FMV %d, DEMO %d,
+   // EXIT_TO_TITLE, EXITGAME, NONE.
+   //---------------------------------------------------------------------
+   // %d is a number inter 0 and 255.
+   //---------------------------------------------------------------------
+   FIRSTOPTION:		Value // By Default: EXIT_TO_TITLE
+   TITLE_REPLACE:	Value // By Default: NONE
+   ONDEATH_DEMO_MODE:	Value // By Default: EXIT_TO_TITLE
+   ONDEATH_INGAME:	Value // By Default: EXIT_TO_TITLE
+   ON_DEMO_INTERRUPT:	Value // By Default: EXIT_TO_TITLE
+   ON_DEMO_END:		Value // By Default: EXIT_TO_TITLE
+
+   //---------------------------------------------------------------------
+   // Possible Flags.
+   //---------------------------------------------------------------------
+   DEMOVERSION:
+   TITLE_DISABLED:
+   CHEATMODECHECK_DISABLED:
+   NOINPUT_TIMEOUT:
+   LOADSAVE_DISABLED:
+   SCREENSIZING_DISABLED:
+   LOCKOUT_OPTIONRING:
+   DOZY_CHEAT_ENABLED:
+   SELECT_ANY_LEVEL:
+   ENABLE_CHEAT_CODE:
+   GYM_DISABLED: // New.
+
+   //---------------------------------------------------------------------
+   // Possible Values (Really only used in TR3):
+   // ENGLISH, FRENCH, GERMAN, AMERICAN, JAPANESE, ITALIAN, SPANISH.
+   //---------------------------------------------------------------------
+   LANGUAGE:		Language_Name // By Default: English.
+
+   //---------------------------------------------------------------------
+   // Other Options.
+   //---------------------------------------------------------------------
+   NOINPUT_TIME:	Time // Time = Seconds * 30.
+   SINGLELEVEL:		Level_Number // By default it is disabled.
+   CYPHER_CODE:		Cypher_Code // Usually: 166.
+   SECRET_TRACK:	Track_ID // In TR2: 0, 2-64. In TR3: 0, 2-129.
+
+END:
+
+
+
+//------------------------------------------------------------------------
+//
+//      T I T L E
+//
+//------------------------------------------------------------------------
+
+
+
+TITLE:
+
+   //---------------------------------------------------------------------
+   // Title Menu Ring Level.
+   //---------------------------------------------------------------------
+   GAME:	data\title_file.tr2		 // Menu Rings
+
+   //---------------------------------------------------------------------
+   // PC Files. TR2 Format: *.PCX. TR3 Format: *.BMP.
+   //---------------------------------------------------------------------
+   PCFILE:	data\title_uk_file.pcx
+   PCFILE:	data\legal_uk_file.pcx
+   PCFILE:	data\title_us_file.pcx
+   PCFILE:	data\legal_us_file.pcx
+   PCFILE:	data\title_jp_file.pcx
+   PCFILE:	data\legal_jp_file.pcx
+
+   //---------------------------------------------------------------------
+   // PlayStation Files.
+   //---------------------------------------------------------------------
+   PSXFILE:	pixUK\title_uk_file.raw
+   PSXFILE:	pixUK\legal_uk_file.raw
+   PSXFILE:	pixUS\title_us_file.raw
+   PSXFILE:	pixUS\legal_us_file.raw
+   PSXFILE:	pixJAP\title_jp_file.raw
+   PSXFILE:	pixJAP\legal_jp_file.raw
+
+   //---------------------------------------------------------------------
+   // Title Track.
+   //---------------------------------------------------------------------
+   TRACK:	Track_ID // In TR2: 0, 2-64. In TR3: 0, 2-129.
+
+END:
+
+
+
+//------------------------------------------------------------------------
+//
+//      F R O N T E N D
+//
+//------------------------------------------------------------------------
+
+
+
+FRONTEND:				 // Full Motion Videos
+
+   FMV_START:	First_Frame // Only in PSX.
+   FMV_END:	Last_Frame // Only in PSX.
+   FMV: 	fmv\fmv_name.rpl
+
+END:
+
+
+
+//------------------------------------------------------------------------
+//
+//      G Y M
+//
+//------------------------------------------------------------------------
+
+
+
+GYM:		Lara's Home		 // Level 0
+
+   SECRETS:	Number_Of_Secrets // Only in TR2.
+   LOAD_PIC:	pix\load_pic_file.raw
+   TRACK:	Track_ID // In TR2: 0, 2-64. In TR3: 0, 2-129.
+   GAME:	data\level_file.tr2
+
+END:
+
+
+
+//------------------------------------------------------------------------
+//
+//      L E V E L S
+//
+//------------------------------------------------------------------------
+
+
+
+LEVEL:		Level Name		 // Level 1
+
+   //---------------------------------------------------------------------
+   // FMV Declaration.
+   //---------------------------------------------------------------------
+   FMV_START:	First_Frame // Only in PSX.
+   FMV_END:	Last_Frame // Only in PSX.
+   FMV: 	fmv\fmv_name.rpl
+
+   //---------------------------------------------------------------------
+   // Level Item Names.
+   //---------------------------------------------------------------------
+   PUZZLE1:	Item_Name
+   PUZZLE2:	Item_Name
+   PUZZLE3:	Item_Name
+   PUZZLE4:	Item_Name
+   PICKUP1:	Item_Name
+   PICKUP2:	Item_Name
+   SECRET1:	Item_Name // Only in TR2 PSX Beta.
+   SECRET2:	Item_Name // Only in TR2 PSX Beta.
+   SECRET3:	Item_Name // Only in TR2 PSX Beta.
+   SECRET4:	Item_Name // Only in TR2 PSX Beta.
+   SPECIAL1:	Item_Name // Only in TR2 PSX Beta.
+   SPECIAL2:	Item_Name // Only in TR2 PSX Beta.
+   KEY1:	Item_Name
+   KEY2:	Item_Name
+   KEY3:	Item_Name
+   KEY4:	Item_Name
+
+   //---------------------------------------------------------------------
+   // Common Items:
+   // PUZZLE1, PUZZLE2, PUZZLE3, PUZZLE4, PICKUP1, PICKUP2,
+   // KEY1, KEY2, KEY3, KEY4, PISTOLS, SHOTGUN, UZIS, HARPOON,
+   // PISTOLS_AMMO, SHOTGUN_AMMO, UZI_AMMO, HARPOON_AMMO,
+   // FLARES, MEDI, BIGMEDI.
+   //
+   // Exclusive TR2 Items:
+   // AUTOPISTOLS, M16, ROCKET, AUTOPISTOLS_AMMO, M16_AMMO,
+   // ROCKET_AMMO.
+   //
+   // Exclusive TR3 Items:
+   // DESERTEAGLE, MP5, ROCKET, GRENADE, DESERTEAGLE_AMMO,
+   // MP5_AMMO, ROCKET_AMMO, GRENADE_AMMO, CRYSTAL.
+   //---------------------------------------------------------------------
+   STARTINV:	Item_Name
+   BONUS:	Item_Name // Only in TR2.
+
+   //---------------------------------------------------------------------
+   // Some Possible Values:
+   //     0 ($0000) -   0 degrees.
+   //  8192 ($2000) -  45 degrees.
+   // 16384 ($4000) -  90 degrees.
+   // 24576 ($6000) - 135 degrees.
+   // 32768 ($8000) - 180 degrees.
+   // 40960 ($A000) - 225 degrees.
+   // 49152 ($C000) - 270 degrees.
+   // 57344 ($E000) - 315 degrees.
+   //---------------------------------------------------------------------
+   // Cut_Angle = Angle * 65536 / 360.
+   //---------------------------------------------------------------------
+   CUTANGLE:	Cut_Angle
+
+   //---------------------------------------------------------------------
+   // Other Commands.
+   //---------------------------------------------------------------------
+   TRACK:	Track_ID // In TR2: 0, 2-64. In TR3: 0, 2-129.
+   SECRETS:	Number_Of_Secrets // Only in TR2.
+   NOFLOOR:	No_Floor_Height // Every click (1/4 squares) is 256.
+   STARTANIM:	Start_Animation_State_ID
+   SUNSET:
+   DEADLY_WATER: // Only in TR2.
+   REMOVE_WEAPONS:
+   REMOVE_AMMO:
+   KILLTOCOMPLETE: // Only in TR2.
+   LOAD_PIC:	pix\load_pic_file.raw
+   GAME:	data\level_file.tr2
+   CUT:		data\cut_file.tr2
+   GAMECOMPLETE: // Show the credit images.
+   COMPLETE: // Level completed.
+
+END:
+
+//-------------------------------------------------
+
+DEMOLEVEL:	Demo Level Name		 // Level N
+
+   LOAD_PIC:	pix\load_pic_file.raw
+   TRACK:	Track_ID // In TR2: 0, 2-64. In TR3: 0, 2-129.
+   DEMO:	data\demo_file.tr2
+
+END:
+
+
+
+//========================================================================
+//========================================================================
+//========================================================================
+
+GameStrings:	STRINGS_FILE.TXT
+
+//========================================================================
+//========================================================================
+//========================================================================
